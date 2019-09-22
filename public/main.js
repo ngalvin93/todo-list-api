@@ -14,7 +14,7 @@ function renderTodoList (response) {
         console.log(singleItem.todo)
     })
     const todoHtml = response.map(function(singleItem){
-        return `<p>${singleItem.todo}</p>`
+        return `<p id="todoItem">${singleItem.todo}</p>`
     })
     todoList.innerHTML = todoHtml.join('')
 }
