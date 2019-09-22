@@ -1,17 +1,16 @@
 {
   "name": "todo-list-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Simple full-stack todo application",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
-  "author": "Adam Szaruga",
+  "author": "Alvin Ng",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "1.18.3",
     "express": "4.16.4",
-    "nodemon": "^1.19.2"
+    "nodemon": "1.19.2"
   }
 }
