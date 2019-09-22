@@ -11,15 +11,15 @@ app.use(express.static(__dirname + '/public'))
 var todoList = [
     {
         id: 1,
-        todo: "Walk the dog"
+        todo: "Set up server with express"
     },
     {
         id: 2,
-        todo: "Finish node exercises"
+        todo: "Add HTTP requests to API routes"
     },
     {
         id: 3,
-        todo: "Wash the dishes"
+        todo: "Include static server"
     }
 ];
 
