@@ -1,10 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background: rgb(238, 238, 238);
+    background: rgb(203, 238, 235);
+}
+
+#form {
+    width: 75vw;
+    display: flex;
+    margin: auto;
 }
 
 #todoItem {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+}
+
+#title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+#todos-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vw;
+    margin: auto;
 }
 
 p, h1 {
@@ -12,4 +37,8 @@ p, h1 {
     font-family: neue-haas-grotesk-display,sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+p {
+    font-size: 20px;
 }
