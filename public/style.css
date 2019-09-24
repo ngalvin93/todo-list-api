@@ -6,13 +6,13 @@ body {
     background: rgb(203, 238, 235);
 }
 
-#form {
+#add-item-form-container {
     width: 75vw;
     display: flex;
     margin: auto;
 }
 
-#todoItem {
+.todo-item {
     background-color: white;
     padding: 15px;
     margin: 10px;
