@@ -44,7 +44,9 @@ function postTodoItem (url, todoItem) {
         body: JSON.stringify(todoItem)
     })
     .then(function (response) {
-        const result = response.json()
-        console.log(result)
+        return response.json()
+    })
+    .then(function (response) {
+        return renderTodoList(response)
     })
 }
