@@ -2,7 +2,7 @@ const todoList = document.querySelector('#todos-child')
 
 document.addEventListener('DOMContentLoaded', function fetchTodoList () {
     $.getJSON('/api/todos')
-        .then(function(response){return response})
+        .then(response => response)
         .then(renderTodoList)
     // document.addEventListener('click', function (e) {
     //     console.log(e.target)
@@ -43,10 +43,6 @@ function postTodoItem (url, todoItem) {
         },
         body: JSON.stringify(todoItem)
     })
-    .then(function (response) {
-        return response.json()
-    })
-    .then(function (response) {
-        return renderTodoList(response)
-    })
+        .then(response => response.json())
+        .then(response => renderTodoList(response))
 }
